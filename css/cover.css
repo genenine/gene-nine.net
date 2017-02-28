@@ -1,0 +1,268 @@
+/*
+ * Golbals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333; /*#333*/;
+  text-shadow: none; /* Prevent inheritence from `body`*/
+  background-color: #;
+  border: 1px solid #000;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000;
+}
+body {
+  color: #000;
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  /*height: 100%; /* For at least Firefox */
+  /*min-height: 100%; */
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.masthead-brand img {
+  width: 100%;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  /*color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.masthead-brand {
+  float: left;
+}
+.masthead-nav {
+  float: right;
+  margin-top: 20px;
+}
+/*@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}*/
+
+/*
+ * Cover
+ */
+
+.cover {
+  margin-top: 120px;
+  background-color: #fff;
+  padding: 0;
+}
+
+.cover .logo {
+  padding-left: 30px;
+  width: 50%;
+}
+.cover .logo img {
+  margin-top: 7px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.album-container {
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* album */
+.album {
+}
+.album .jacket {
+  float: left;
+  width: 50%;
+}
+.album .info {
+  float: right;
+  width: 50%;
+}
+.album .album-title {
+  margin-top: 0px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.album .album-subtitle {
+  margin-left: 27px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.album .album-additional {
+  margin-left: 33px;
+  font-weight: normal;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.album ol {
+  margin-top: 7px;
+  color: #aaa;
+  margin-left: 14px;
+  font-weight: normal;
+  font-size: 12px;
+  list-style-type: decimal-leading-zero;
+}
+.album .links {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.album .links * {
+  margin-left: 2px;
+  float: left;
+}
+
+.album img {
+  width: 100%;
+}
+
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Contact (contact.html)
+ */
+.contact {
+  color: #777;
+  text-align: center;
+  margin-top: 370px;
+  font-size: 17px;
+  padding: 0;
+
+}
+
+.contact .name {
+  color: #ddd;
+  font-size: 19px;
+}
+
+.contact .note {
+  font-size: 13px;
+}
+
+/*
+ * Footer
+ */
+
+/*.mastfoot {
+  height: 5%;
+  /*color: #000; /* IE8 proofing * /
+  color: rgba(255,255,255,.5);
+}*/
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    background-color: #000;
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 992px; /* 700px; */
+  }
+}
+
+
